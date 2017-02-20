@@ -1,0 +1,88 @@
+/*
+
+ Created by: Eirik Thommessen
+
+*/
+
+
+
+
+/*	makes all images default size equal to theire container*/
+img{
+	width: 100%;
+}
+
+/* hides elements by default*/
+#btnstopp, #settings {
+	display:none;
+}
+
+#btnsettings {
+	cursor: pointer;
+}
+/* 	Adds mediaqueries to the clock
+	This alters the size of the clock by using the zoom element
+*/
+@media (min-width: 1200px){
+	#timer{
+		-moz-transform: scale(2.3, 2.3);
+   		zoom: 2.3;
+   		zoom: 230%;
+   		margin-top: 10%;
+		}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+	#timer{
+		-moz-transform: scale( 1.9,  1.9);
+   		zoom:  1.9;
+   		zoom: 190%;
+   		margin-top: 10%;
+		}
+}
+
+@media (max-width: 991px){
+	#timer{
+		-moz-transform: scale( 1.1,  1.1);
+   		zoom:  1.1;
+   		zoom: 110%;
+   		margin-top: 10%;
+		}
+}
+
+/* Adds padding */
+#startstop {
+	padding-top: 10%;
+}
+
+/* alter the animate.css functions*/
+#timer {
+  -vendor-animation-duration: 5s;
+  -vendor-animation-delay: 5s;
+  -vendor-animation-iteration-count: 10;
+}
+
+/* Sets background-color gradient to the settings div*/
+#settingscontainer {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#313c47+0,000000+100 */
+background: rgb(49,60,71); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(49,60,71,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(49,60,71,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(49,60,71,1) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313c47', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	color: #ccc;
+}
+
+i.small{
+	font-size: 0.8em;
+	padding-left: 2%;
+	vertical-align: top;
+}
+/* Adds shadow to the butttons */
+.btn-lg {
+	box-shadow: 0px 5px 5px #888888;
+}
+
+.btn {
+	box-shadow: 0px 2px 2px #888;
+}
