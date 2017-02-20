@@ -14,4 +14,5 @@ You can can change the logo by replacing the logo.png in the image folder with y
 ## Dependencies
 
 This application has been created with the following dependancies(all included in the repository):
-	* (https://v4-alpha.getbootstrap.com/ Bootstrap )
+		
+		* (https://v4-alpha.getbootstrap.com/ "Bootstrap" )
